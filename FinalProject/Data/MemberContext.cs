@@ -60,7 +60,7 @@ namespace FinalProject.Data
           },
           new info
           {
-              ID = 5,
+              ID = 6,
               FullName = "Pranav Mahajan",
               CollegeProgram = "IT",
               YearInProgram = "Sophmore",
@@ -189,6 +189,7 @@ namespace FinalProject.Data
             },
             new Course
             {
+                Id = 6,
                 FullName = "Pranav Mahajan",
                 CourseName = "Network Security",
                 CourseID = "IT3071",
@@ -289,7 +290,7 @@ namespace FinalProject.Data
               {
                   ID = 2,
                   FullName = "Josh Anness",
-                  FavoriteSport = "Soccer",
+                  FavoriteSport = "Baseball",
                   When = new DateTime(2009, 01, 02)
               },
               new Sport
