@@ -68,7 +68,32 @@ namespace FinalProject.Migrations.Course
                             CourseName = "Database Management II",
                             FullName = "Jeffrey Wallace",
                             ProfessorName = "Aditty Mutsuddi"
-                        });
+                        },
+                         new
+                        {
+                            Id = 4,
+                            CourseID = "IT3080",
+                            CourseName = "Contemporary Programming",
+                            FullName = "Darrion Hoard",
+                            ProfessorName = "Dyllon Dekok"
+                        },
+                         new
+                        {
+                            Id = 5,
+                            CourseID = "IT3080",
+                            CourseName = "Contemporary Programming",
+                            FullName = "Bangyan Ju",
+                            ProfessorName = "Dyllon Dekok"
+                        },
+                         new
+                        {
+                            Id = 6,
+                            CourseID = "IT3080",
+                            CourseName = "Contemporary Programming",
+                            FullName = "Pranav Mahajan",
+                            ProfessorName = "Dyllon Dekok"
+                        }
+                    );
                 });
 #pragma warning restore 612, 618
         }
