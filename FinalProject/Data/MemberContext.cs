@@ -189,9 +189,9 @@ namespace FinalProject.Data
           {
               Id = 4,
               FullName = "Darrion Hoard",
-              FavoriteFood = "Cooking",
-              SecondFavoriteFood = "Jiu Jitsu",
-              FavoriteMealTime = "I love to eat and learning new submission points"
+              FavoriteFood = "Pizza",
+              SecondFavoriteFood = "Burger",
+              FavoriteMealTime = "Dinner"
           }
         );
     }
