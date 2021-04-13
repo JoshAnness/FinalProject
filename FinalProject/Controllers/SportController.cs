@@ -26,7 +26,7 @@ namespace FinalProject.Controllers
            
 
             if (id == null || id < 1)
-                return Ok(_ctx.Sport.Take(5).ToList());
+                return Ok(_ctx.Sport.Take(10).ToList());
 
             var member = _ctx.Sport.Find(id);
             if (member == null)

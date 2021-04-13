@@ -24,7 +24,7 @@ namespace FinalProject.Controllers
       public IActionResult Get(int? id)
       {
         if (id == null || id < 1)
-            return Ok(_ctx.Hobbies.Take(5).ToList());
+            return Ok(_ctx.Hobbies.Take(10).ToList());
             
             var member = _ctx.Hobbies.Find(id);
         if (member == null)
