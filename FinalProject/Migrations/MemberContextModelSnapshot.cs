@@ -62,10 +62,10 @@ namespace FinalProject.Migrations
                         new
                         {
                             ID = 3,
-                            Birthdate = new DateTime(1990, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Birthdate = new DateTime(2000, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CollegeProgram = "IT",
-                            FullName = "Michael Ahlers",
-                            YearInProgram = "Sophmore"
+                            FullName = "Jeffrey Wallace",
+                            YearInProgram = "Junior"
                         },
                         new
                         {
@@ -74,6 +74,14 @@ namespace FinalProject.Migrations
                             CollegeProgram = "IT",
                             FullName = "Darrion Hoard",
                             YearInProgram = "Junior"
+                        },
+                        new
+                        {
+                            ID = 5,
+                            Birthdate = new DateTime(2001, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "IT",
+                            FullName = "Pranav Mahajan",
+                            YearInProgram = "Sophmore"
                         });
                 });
 #pragma warning restore 612, 618
