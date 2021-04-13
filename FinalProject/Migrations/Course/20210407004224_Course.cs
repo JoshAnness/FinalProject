@@ -40,6 +40,15 @@ namespace FinalProject.Migrations.Course
                 table: "Courses",
                 columns: new[] { "Id", "CourseID", "CourseName", "FullName", "ProfessorName" },
                 values: new object[] { 4, "IT3045", "Database Management II", "Darrion Hoard", "Professor D" });
+             migrationBuilder.InsertData(
+                table: "Courses",
+                columns: new[] { "Id", "CourseID", "CourseName", "FullName", "ProfessorName" },
+                values: new object[] { 5, "IT3080", "Contemporary Programming", "Bangyan Ju", "Dyllon Dekok" });
+             migrationBuilder.InsertData(
+                table: "Courses",
+                columns: new[] { "Id", "CourseID", "CourseName", "FullName", "ProfessorName" },
+                values: new object[] { 6, "IT3080", "Contemporary Programming", "Pranav Mahajan", "Dyllon Dekok" });
+            
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -78,6 +78,14 @@ namespace FinalProject.Migrations
                         new
                         {
                             ID = 5,
+                            Birthdate = new DateTime(2000, 2, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "IT",
+                            FullName = "Bangyan Ju",
+                            YearInProgram = "Junior"
+                        },
+                        new
+                        {
+                            ID = 6,
                             Birthdate = new DateTime(2001, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CollegeProgram = "IT",
                             FullName = "Pranav Mahajan",

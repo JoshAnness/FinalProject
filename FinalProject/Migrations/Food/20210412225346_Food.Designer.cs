@@ -64,19 +64,37 @@ namespace FinalProject.Migrations.Food
                         new
                         {
                             Id = 3,
-                            FavoriteFood = "Cooking",
-                            FavoriteMealTime = "I like exploring",
+                            FavoriteFood = "Loaded Fries",
+                            FavoriteMealTime = "Dinner",
                             FullName = "Jeffrey Wallace",
-                            SecondFavoriteFood = "Photography"
+                            SecondFavoriteFood = "Salad"
                         },
                         new
                         {
                             Id = 4,
-                            FavoriteFood = "Cooking",
-                            FavoriteMealTime = "I love to eat and learning new submission points",
+                            FavoriteFood = "Pizza",
+                            FavoriteMealTime = "Dinner",
                             FullName = "Darrion Hoard",
-                            SecondFavoriteFood = "Jiu Jitsu"
-                        });
+                            SecondFavoriteFood = "Burger"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            FavoriteFood = "Pizza",
+                            FavoriteMealTime = "Dinner",
+                            FullName = "Bangyan Ju",
+                            SecondFavoriteFood = "Hot pot"
+                        },
+                        new Food
+                         {
+                             Id = 6,
+                             FavoriteFood = "Cane's Fingers",
+                             FavoriteMealTime = "Dinner"
+                             FullName = "Pranav Mahajan",
+                             SecondFavoriteFood = "Wings",
+                            
+                        }
+                    );
                 });
 #pragma warning restore 612, 618
         }
