@@ -29,8 +29,10 @@ namespace FinalProject.Migrations.Food
                 {
                     { 1, "Pizza", "Lunch", "Michael Ahlers", "Wings" },
                     { 2, "Burger", "Dinner", "Josh Anness", "Pizza" },
-                    { 3, "Cooking", "I like exploring", "Jeffrey Wallace", "Photography" },
-                    { 4, "Cooking", "I love to eat and learning new submission points", "Darrion Hoard", "Jiu Jitsu" }
+                    { 3, "Loaded Fries", "Dinner", "Jeffrey Wallace", "Salad" },
+                    { 4, "Pizza", "Dinner", "Darrion Hoard", "Burger" },
+                    { 5, "Pizza", "Dinner", "Bangyan Ju", "Hot pot" },
+                    { 6, "Cane's Fingers", "Dinner", "Pranav Mahajan", "Wings" }
                 });
         }
 
