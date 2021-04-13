@@ -11,8 +11,8 @@ namespace FinalProject.Controllers
     public class FoodController : ControllerBase
     {
         private readonly ILogger<FoodController> _logger;
-        private readonly FoodContext _ctx;
-        public FoodController(ILogger<FoodController> logger, FoodContext ctx)
+        private readonly MemberContext _ctx;
+        public FoodController(ILogger<FoodController> logger, MemberContext ctx)
         {
             _logger = logger;
             _ctx = ctx;

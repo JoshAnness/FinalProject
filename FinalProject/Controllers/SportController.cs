@@ -11,8 +11,8 @@ namespace FinalProject.Controllers
     public class SportController : ControllerBase
     {
         private readonly ILogger<SportController> _logger;
-        private readonly SportContext _ctx;
-        public SportController(ILogger<SportController> logger, SportContext ctx )
+        private readonly MemberContext _ctx;
+        public SportController(ILogger<SportController> logger, MemberContext ctx )
         {
             _logger = logger;
             _ctx = ctx;

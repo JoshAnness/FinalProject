@@ -13,6 +13,10 @@ namespace FinalProject.Data
     }
 
     public DbSet<info> Info {get; set;}
+    public DbSet<Hobby> Hobbies { get; set;}
+    public DbSet<Course> Courses { get; set; }
+    public DbSet<Food> Foods { get; set;}
+    public DbSet<Sport> Sport { get; set; } 
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -65,23 +69,7 @@ namespace FinalProject.Data
               CollegeProgram = "IT",
               YearInProgram = "Sophmore",
               Birthdate = new DateTime(2001, 05, 15)
-          }
-        );
-    }
-  }
-
-  public class HobbyContext : DbContext
-  {
-
-    public HobbyContext(DbContextOptions<HobbyContext> options) : base(options)
-    {
-
-    }
-    public DbSet<Hobby> Hobbies { get; set;}
-
-    protected override void OnModelCreating(ModelBuilder builder)
-    {
-        builder.Entity<Hobby>().HasData(
+          },
           new Hobby
           {
               Id = 1,
@@ -130,23 +118,8 @@ namespace FinalProject.Data
               FavoriteHobby = "Playing Video Games",
               SecondFavoriteHobby = "Playing Guitar",
               WhyYouLikeThem = "Video games are a fun way to hang out with my friends, and guitar keeps my brain active."
-          }
-        );
-    }
-  }
-   public class CourseContext : DbContext 
-    { 
-
-        public CourseContext(DbContextOptions<CourseContext> options) : base(options)
-        {
-        }
-
-        public DbSet<Course> Courses { get; set; }
-        
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-          builder.Entity<Course>().HasData(
-            new Course
+          },
+        new Course
             {
               Id = 1,
               FullName = "Michael Ahlers",
@@ -194,26 +167,8 @@ namespace FinalProject.Data
                 CourseName = "Network Security",
                 CourseID = "IT3071",
                 ProfessorName = "Professor Mark Stockman"
-            }
-
-          );
-
-        }
-    }
-
-  public class FoodContext : DbContext
-  {
-
-    public FoodContext(DbContextOptions<FoodContext> options) : base(options)
-    {
-
-    }
-    public DbSet<Food> Foods { get; set;}
-
-    protected override void OnModelCreating(ModelBuilder builder)
-    {
-        builder.Entity<Food>().HasData(
-          new Food
+            },
+            new Food
           {
               Id = 1,
               FullName = "Michael Ahlers",
@@ -260,25 +215,8 @@ namespace FinalProject.Data
               FavoriteFood = "Cane's Fingers",
               SecondFavoriteFood = "Wings",
               FavoriteMealTime = "Dinner"
-          }
-
-        );
-    }
-  }
-
-  public class SportContext : DbContext 
-    {
-
-        public SportContext(DbContextOptions<SportContext> options ) :base(options)
-        {
-        }
-
-        public DbSet<Sport> Sport { get; set; } 
-
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.Entity<Sport>().HasData(
-              new Sport
+          },
+          new Sport
               {
                   ID = 1,
                   FullName = "Michael Ahlers",
@@ -321,8 +259,8 @@ namespace FinalProject.Data
                   FavoriteSport = "Snooker",
                   When = new DateTime(2010, 05, 15)
               }
-            );
-        }
-
+        );
     }
+  }
+
 }

@@ -11,8 +11,8 @@ namespace FinalProject.Controllers
     public class HobbiesController : ControllerBase
     {
         private readonly ILogger<HobbiesController> _logger;
-        private readonly HobbyContext _ctx;
-        public HobbiesController(ILogger<HobbiesController> logger, HobbyContext ctx)
+        private readonly MemberContext _ctx;
+        public HobbiesController(ILogger<HobbiesController> logger, MemberContext ctx)
         {
             _logger = logger;
             _ctx = ctx;
