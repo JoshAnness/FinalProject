@@ -290,7 +290,7 @@ namespace FinalProject.Data
               {
                   ID = 2,
                   FullName = "Josh Anness",
-                  FavoriteSport = "Soccer",
+                  FavoriteSport = "Baseball",
                   When = new DateTime(2009, 01, 02)
               },
               new Sport
