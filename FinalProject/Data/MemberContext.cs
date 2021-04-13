@@ -48,6 +48,23 @@ namespace FinalProject.Data
               CollegeProgram = "IT",
               YearInProgram = "Junior",
               Birthdate = new DateTime(1994, 07, 13)
+          },
+          new info
+          {
+              ID = 5,
+              FullName = "Bangyan Ju",
+              CollegeProgram = "IT",
+              YearInProgram = "Junior",
+              Birthdate = new DateTime(2000, 02, 04)
+
+          },
+          new info
+          {
+              ID = 5,
+              FullName = "Pranav Mahajan",
+              CollegeProgram = "IT",
+              YearInProgram = "Sophmore",
+              Birthdate = new DateTime(2001, 05, 15)
           }
         );
     }
@@ -96,6 +113,23 @@ namespace FinalProject.Data
               FavoriteHobby = "Cooking",
               SecondFavoriteHobby = "Jiu Jitsu",
               WhyYouLikeThem = "I love to eat and learning new submission points"
+          },
+           new Hobby
+          {
+              Id = 5,
+              FullName = "Bangyan Ju",
+              FavoriteHobby = "Cooking",
+              SecondFavoriteHobby = "Swimming",
+              WhyYouLikeThem = "They make me feel happy"
+
+          },
+        new Hobby
+          {
+              Id = 6,
+              FullName = "Pranav Mahajan",
+              FavoriteHobby = "Playing Video Games",
+              SecondFavoriteHobby = "Playing Guitar",
+              WhyYouLikeThem = "Video games are a fun way to hang out with my friends, and guitar keeps my brain active."
           }
         );
     }
@@ -143,7 +177,24 @@ namespace FinalProject.Data
                 CourseName = "Database Management II",
                 CourseID = "IT3045",
                 ProfessorName = "Professor D"
+            },
+            new Course
+            {
+                Id = 5,
+                FullName = "Bangyan Ju",
+                CourseName = "Database Management II",
+                CourseID = "IT3080",
+                ProfessorName = "Dyllon Dekok"
+
+            },
+            new Course
+            {
+                FullName = "Pranav Mahajan",
+                CourseName = "Network Security",
+                CourseID = "IT3071",
+                ProfessorName = "Professor Mark Stockman"
             }
+
           );
 
         }
@@ -192,8 +243,85 @@ namespace FinalProject.Data
               FavoriteFood = "Pizza",
               SecondFavoriteFood = "Burger",
               FavoriteMealTime = "Dinner"
+          },
+          new Food
+          {
+              Id = 5,
+              FullName = "Bangyan Ju",
+              FavoriteFood = "Pizza",
+              SecondFavoriteFood = "Hot pot",
+              FavoriteMealTime = "Dinner"
+          },
+          new Food
+          {
+              Id = 6,
+              FullName = "Pranav Mahajan",
+              FavoriteFood = "Cane's Fingers",
+              SecondFavoriteFood = "Wings",
+              FavoriteMealTime = "Dinner"
           }
+
         );
     }
   }
+
+  public class SportContext : DbContext 
+    {
+
+        public SportContext(DbContextOptions<SportContext> options ) :base(options)
+        {
+        }
+
+        public DbSet<Sport> Sport { get; set; } 
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Sport>().HasData(
+              new Sport
+              {
+                  ID = 1,
+                  FullName = "Michael Ahlers",
+                  FavoriteSport = "Football",
+                  When = new DateTime(2007, 05, 12)
+              },
+              new Sport
+
+              {
+                  ID = 2,
+                  FullName = "Josh Anness",
+                  FavoriteSport = "Soccer",
+                  When = new DateTime(2009, 01, 02)
+              },
+              new Sport
+              {
+                  ID = 3,
+                  FullName = "Jeffrey Wallace",
+                  FavoriteSport = "Swimming",
+                  When = new DateTime(2008, 08, 28)
+              },
+              new Sport
+              {
+                  ID = 4,
+                  FullName = "Darrion Hoard",
+                  FavoriteSport = "Skateboarding",
+                  When = new DateTime(2005, 07, 13)
+              },
+               new Sport
+               {
+                   ID = 5,
+                   FullName = "Bangyan Ju",
+                   FavoriteSport = "Snowboarding",
+                   When = new DateTime(2005, 07, 13)
+               },
+              new Sport
+              {
+                  ID = 6,
+                  FullName = "Pranav Mahajan",
+                  FavoriteSport = "Snooker",
+                  When = new DateTime(2010, 05, 15)
+              }
+            );
+        }
+
+    }
 }
