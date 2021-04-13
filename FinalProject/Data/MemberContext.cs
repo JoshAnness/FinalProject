@@ -60,7 +60,7 @@ namespace FinalProject.Data
           },
           new info
           {
-              ID = 5,
+              ID = 6,
               FullName = "Pranav Mahajan",
               CollegeProgram = "IT",
               YearInProgram = "Sophmore",
@@ -189,6 +189,7 @@ namespace FinalProject.Data
             },
             new Course
             {
+                Id = 6,
                 FullName = "Pranav Mahajan",
                 CourseName = "Network Security",
                 CourseID = "IT3071",
