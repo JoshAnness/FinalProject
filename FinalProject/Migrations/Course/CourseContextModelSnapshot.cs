@@ -74,7 +74,25 @@ namespace FinalProject.Migrations.Course
                             CourseName = "Database Management II",
                             FullName = "Darrion Hoard",
                             ProfessorName = "Professor D"
-                        });
+                        },
+                         new
+                        {
+                            Id = 5,
+                            CourseID = "IT3080",
+                            CourseName = "Database Management II",
+                            FullName = "Bangyan Ju",
+                            ProfessorName = "Dyllon Dekok"
+                        },
+                         new
+                        {
+                            Id = 6,
+                            CourseID = "IT3080",
+                            CourseName = "Database Management II",
+                            FullName = "Pranav Mahajan",
+                            ProfessorName = "Dyllon Dekok"
+                        },
+                        
+                        );
                 });
 #pragma warning restore 612, 618
         }
