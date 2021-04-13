@@ -48,6 +48,14 @@ namespace FinalProject.Data
               CollegeProgram = "IT",
               YearInProgram = "Junior",
               Birthdate = new DateTime(1994, 07, 13)
+          },
+          new info
+          {
+              ID = 5,
+              FullName = "Bangyan Ju",
+              CollegeProgram = "IT",
+              YearInProgram = "Junior",
+              Birthdate = new DateTime(2000, 02, 04)
           }
         );
     }
@@ -96,6 +104,14 @@ namespace FinalProject.Data
               FavoriteHobby = "Cooking",
               SecondFavoriteHobby = "Jiu Jitsu",
               WhyYouLikeThem = "I love to eat and learning new submission points"
+          },
+           new Hobby
+          {
+              Id = 5,
+              FullName = "Bangyan Ju",
+              FavoriteHobby = "Cooking",
+              SecondFavoriteHobby = "Swimming",
+              WhyYouLikeThem = "They make me feel happy"
           }
         );
     }
@@ -143,6 +159,14 @@ namespace FinalProject.Data
                 CourseName = "Database Management II",
                 CourseID = "IT3045",
                 ProfessorName = "Professor D"
+            },
+            new Course
+            {
+                Id = 5,
+                FullName = "Bangyan Ju",
+                CourseName = "Database Management II",
+                CourseID = "IT3080",
+                ProfessorName = "Dyllon Dekok"
             }
           );
 
@@ -191,6 +215,14 @@ namespace FinalProject.Data
               FullName = "Darrion Hoard",
               FavoriteFood = "Pizza",
               SecondFavoriteFood = "Burger",
+              FavoriteMealTime = "Dinner"
+          },
+          new Food
+          {
+              Id = 5,
+              FullName = "Bangyan Ju",
+              FavoriteFood = "Pizza",
+              SecondFavoriteFood = "Hot pot",
               FavoriteMealTime = "Dinner"
           }
         );
