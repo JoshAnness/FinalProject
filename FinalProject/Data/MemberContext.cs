@@ -52,6 +52,15 @@ namespace FinalProject.Data
           new info
           {
               ID = 5,
+              FullName = "Bangyan Ju",
+              CollegeProgram = "IT",
+              YearInProgram = "Junior",
+              Birthdate = new DateTime(2000, 02, 04)
+
+          },
+          new info
+          {
+              ID = 5,
               FullName = "Pranav Mahajan",
               CollegeProgram = "IT",
               YearInProgram = "Sophmore",
@@ -77,9 +86,9 @@ namespace FinalProject.Data
           {
               Id = 1,
               FullName = "Michael Ahlers",
-              FavoriteHobby = "Basketball",
-              SecondFavoriteHobby = "Baseball",
-              WhyYouLikeThem = "I like staying active"
+              FavoriteHobby = "Board Games",
+              SecondFavoriteHobby = "Video Games",
+              WhyYouLikeThem = "Great way to relax"
           },
           new Hobby
           {
@@ -105,9 +114,18 @@ namespace FinalProject.Data
               SecondFavoriteHobby = "Jiu Jitsu",
               WhyYouLikeThem = "I love to eat and learning new submission points"
           },
-          new Hobby
+           new Hobby
           {
               Id = 5,
+              FullName = "Bangyan Ju",
+              FavoriteHobby = "Cooking",
+              SecondFavoriteHobby = "Swimming",
+              WhyYouLikeThem = "They make me feel happy"
+
+          },
+        new Hobby
+          {
+              Id = 6,
               FullName = "Pranav Mahajan",
               FavoriteHobby = "Playing Video Games",
               SecondFavoriteHobby = "Playing Guitar",
@@ -163,11 +181,20 @@ namespace FinalProject.Data
             new Course
             {
                 Id = 5,
+                FullName = "Bangyan Ju",
+                CourseName = "Database Management II",
+                CourseID = "IT3080",
+                ProfessorName = "Dyllon Dekok"
+
+            },
+            new Course
+            {
                 FullName = "Pranav Mahajan",
                 CourseName = "Network Security",
                 CourseID = "IT3071",
                 ProfessorName = "Professor Mark Stockman"
             }
+
           );
 
         }
@@ -189,9 +216,9 @@ namespace FinalProject.Data
           {
               Id = 1,
               FullName = "Michael Ahlers",
-              FavoriteFood = "Pizza",
+              FavoriteFood = "Sushi",
               SecondFavoriteFood = "Wings",
-              FavoriteMealTime = "Lunch"
+              FavoriteMealTime = "Dinner"
           },
           new Food
           {
@@ -205,21 +232,29 @@ namespace FinalProject.Data
           {
               Id = 3,
               FullName = "Jeffrey Wallace",
-              FavoriteFood = "Cooking",
-              SecondFavoriteFood = "Photography",
-              FavoriteMealTime = "I like exploring"
+              FavoriteFood = "Loaded Fries",
+              SecondFavoriteFood = "Salad",
+              FavoriteMealTime = "Dinner"
           },
           new Food
           {
               Id = 4,
               FullName = "Darrion Hoard",
-              FavoriteFood = "Cooking",
-              SecondFavoriteFood = "Jiu Jitsu",
-              FavoriteMealTime = "I love to eat and learning new submission points"
+              FavoriteFood = "Pizza",
+              SecondFavoriteFood = "Burger",
+              FavoriteMealTime = "Dinner"
           },
           new Food
           {
               Id = 5,
+              FullName = "Bangyan Ju",
+              FavoriteFood = "Pizza",
+              SecondFavoriteFood = "Hot pot",
+              FavoriteMealTime = "Dinner"
+          },
+          new Food
+          {
+              Id = 6,
               FullName = "Pranav Mahajan",
               FavoriteFood = "Cane's Fingers",
               SecondFavoriteFood = "Wings",
@@ -268,12 +303,19 @@ namespace FinalProject.Data
               {
                   ID = 4,
                   FullName = "Darrion Hoard",
-                  FavoriteSport = "Hockey",
+                  FavoriteSport = "Skateboarding",
                   When = new DateTime(2005, 07, 13)
               },
+               new Sport
+               {
+                   ID = 5,
+                   FullName = "Bangyan Ju",
+                   FavoriteSport = "Snowboarding",
+                   When = new DateTime(2005, 07, 13)
+               },
               new Sport
               {
-                  ID = 5,
+                  ID = 6,
                   FullName = "Pranav Mahajan",
                   FavoriteSport = "Snooker",
                   When = new DateTime(2010, 05, 15)
