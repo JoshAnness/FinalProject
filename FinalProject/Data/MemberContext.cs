@@ -69,7 +69,9 @@ namespace FinalProject.Data
               CollegeProgram = "IT",
               YearInProgram = "Sophmore",
               Birthdate = new DateTime(2001, 05, 15)
-          },
+          }
+        );
+        builder.Entity<Hobby>().HasData(
           new Hobby
           {
               Id = 1,
@@ -118,7 +120,9 @@ namespace FinalProject.Data
               FavoriteHobby = "Playing Video Games",
               SecondFavoriteHobby = "Playing Guitar",
               WhyYouLikeThem = "Video games are a fun way to hang out with my friends, and guitar keeps my brain active."
-          },
+          }
+        );
+        builder.Entity<Course>().HasData(
         new Course
             {
               Id = 1,
@@ -167,7 +171,9 @@ namespace FinalProject.Data
                 CourseName = "Network Security",
                 CourseID = "IT3071",
                 ProfessorName = "Professor Mark Stockman"
-            },
+            }
+        );
+          builder.Entity<Food>().HasData(
             new Food
           {
               Id = 1,
@@ -215,7 +221,9 @@ namespace FinalProject.Data
               FavoriteFood = "Cane's Fingers",
               SecondFavoriteFood = "Wings",
               FavoriteMealTime = "Dinner"
-          },
+          }
+          );
+          builder.Entity<Sport>().HasData(
           new Sport
               {
                   ID = 1,
@@ -224,7 +232,6 @@ namespace FinalProject.Data
                   When = new DateTime(2007, 05, 12)
               },
               new Sport
-
               {
                   ID = 2,
                   FullName = "Josh Anness",
