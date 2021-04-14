@@ -27,7 +27,7 @@ namespace FinalProject.Controllers
           //return Ok(_ctx.Info.ToList());
 
           if (id == null || id < 1)
-                return Ok(_ctx.Info.Take(10).ToList());
+                return Ok(_ctx.Info.Take(5).ToList());
             
             var member = _ctx.Info.Find(id);
             if (member == null)

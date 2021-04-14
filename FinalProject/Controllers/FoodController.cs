@@ -24,7 +24,7 @@ namespace FinalProject.Controllers
       public IActionResult Get(int? id)
       {
         if (id == null || id < 1)
-            return Ok(_ctx.Foods.Take(10).ToList());
+            return Ok(_ctx.Foods.Take(5).ToList());
             
             var member = _ctx.Foods.Find(id);
         if (member == null)
